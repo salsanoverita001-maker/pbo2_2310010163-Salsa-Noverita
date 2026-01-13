@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0f4cc3fb-00d2-49bc-b31b-e484eca55189">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from jadwal_sidang]]>
+	</queryString>
+	<field name="ID_Jadwal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Hari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jam" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Susunan_Majlis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Acara" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ruang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="20" uuid="5a2d5218-8c67-4143-bd68-6e2dfd8874a6"/>
+				<text><![CDATA[ID_Jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="0" width="51" height="20" uuid="c7cd835a-aefa-40a2-83ff-27ca33856f3f"/>
+				<text><![CDATA[Hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="0" width="67" height="20" uuid="a2644b5c-674b-4670-b5d1-998dc9dcbce5"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="0" width="57" height="20" uuid="c04328a9-92f2-4d4b-bb71-3954ad7fcacc"/>
+				<text><![CDATA[Jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="2" width="81" height="20" uuid="58eb0e84-584b-4585-8c1f-2de22ff33854"/>
+				<text><![CDATA[Susunan_Majlis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="52" height="20" uuid="af48eb2a-ccff-4e22-ac40-1b0d8ecb1d3c"/>
+				<text><![CDATA[Acara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="83" height="20" uuid="1a332228-6751-40d4-9cd7-9614a8f38c33"/>
+				<text><![CDATA[Ruang]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="58" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="17" width="70" height="20" uuid="8e3287bb-0424-4781-a40f-4fa110310fc0"/>
+				<textFieldExpression><![CDATA[$F{ID_Jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="17" width="51" height="20" uuid="1d2a1d21-7769-4f33-b1d8-4db51a2b1d53"/>
+				<textFieldExpression><![CDATA[$F{Hari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="17" width="77" height="20" uuid="d09ee334-e31e-4669-9b4a-e7cf0befc135"/>
+				<textFieldExpression><![CDATA[$F{Tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="17" width="57" height="20" uuid="e21782e0-b042-4cd6-8135-d99c20932c58"/>
+				<textFieldExpression><![CDATA[$F{Jam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="18" width="100" height="20" uuid="d9cd516f-3925-4c5f-8d6e-a8c7adf3bd07"/>
+				<textFieldExpression><![CDATA[$F{Susunan_Majlis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="17" width="52" height="20" uuid="f55dcf3d-2c02-43b9-86f0-9cda182f5c43"/>
+				<textFieldExpression><![CDATA[$F{Acara}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="17" width="72" height="20" uuid="7e5f2d37-147f-4551-bbd2-605a2335568a"/>
+				<textFieldExpression><![CDATA[$F{Ruang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
